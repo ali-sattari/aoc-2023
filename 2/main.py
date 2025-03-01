@@ -17,11 +17,7 @@ class Draw:
         return f"Draw({', '.join(out)})"
 
     def __le__(self, other):
-        for i, v in enumerate(self.cubes):
-            if (v <= other[i]) == False:
-                return False
-
-        return True
+        return all(x <= y for x, y in zip(self, other))
 
     def __iter__(self):
         return iter(self.cubes)
@@ -29,7 +25,6 @@ class Draw:
     def __getitem__(self, index):
         return self.cubes[index]
 
-colors = ['red', 'green', 'blue']
 def parse_input(path: str) -> dict:
     games = dict()
     with open(path) as file:
@@ -52,7 +47,6 @@ bag = Draw({
 def solution_p1(games: dict) -> int:
     answer = 0
     for id, draws in games.items():
-        p = True
         for d in draws:
             if (d <= bag) == False:
                 # print(f"game {id} is impossibru! {d}")
