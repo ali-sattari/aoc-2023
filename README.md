@@ -12,3 +12,5 @@ For future reference, what I used to solved each day.
 | 2   | tuple           | - |
 | 3   | matrix, tuple, grid (adjacency, boundary) | - |
 | 4   | set, recursion, dynamic programming | - |
+| 5   | intervals, set, custom type, special methods | - |
+| 6   |  | - |
