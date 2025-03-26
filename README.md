@@ -14,3 +14,4 @@ For future reference, what I used to solved each day.
 | 4   | set, recursion, dynamic programming | - |
 | 5   | intervals, set, custom type, special methods | - |
 | 6   | binary search, higher-order function | - |
+| 7   | frequency counter, custom type, special methods | - |
